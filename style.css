@@ -1,0 +1,54 @@
+/* Estilo para el enlace de "Saltar al contenido principal" (Accesibilidad) */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Paso 3: Comentar el estilo existente para los elementos li */
+/* 
+li {
+    display: inline;
+} 
+*/
+
+/* Paso 4: Elemento nav con inline-block y ancho ~80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* Paso 5: Selector descendente para la imagen dentro de nav (~10% de ancho) */
+nav img {
+    width: 10%;
+}
+
+/* Pasos 6 y 8: Clase grid de 2 columnas de ~40% cada una con alineación y espacios */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* Paso 7: Selector descendente solo para las imágenes dentro de .grid (100% de ancho) */
+.grid img {
+    width: 100%;
+}
+
+/* Paso 9: Clase flex con propiedades flex-wrap y justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
